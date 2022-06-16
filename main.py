@@ -54,6 +54,7 @@ class CopyBot(discord.Client):
 
   async def on_ready(self):
     logging.info(f"Logged on as {self.user}.")
+    print(f"Logged on as {self.user}.")
 
   async def on_message(self, message):
     if message.author.id == self.user.id:
