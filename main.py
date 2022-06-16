@@ -4,12 +4,16 @@ import asyncio, json, logging, sys, os.path, argparse, sqlite3
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--debug", action="store_true")
+parser.add_argument("-i", "--info", action="store_true")
 args = parser.parse_args()
 
 if args.debug:
   logLevel = logging.DEBUG
-else:
+elif args.info:
   logLevel = logging.INFO
+else:
+  logLevel = logging.WARNING
+
 logging.basicConfig(level=logLevel)
 
 class ReplicationMap():
