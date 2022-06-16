@@ -7,7 +7,7 @@ Usage:
   The bot needs a config.json file set up in the same folder as the bot.py script, with the following content:
     {"token":"your token goes here",
      "copyuserid":your_user_id_goes_here}
-
+  The replication_map.sqlite file stores information needed to propagate edits. (Which replicated messages belong to an original message.)
 Developer documentation can be found at:
   libraries:
     discord.py - https://discordpy.readthedocs.io/en/stable/ (this is the best resource)
