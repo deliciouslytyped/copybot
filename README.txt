@@ -5,7 +5,8 @@ Usage:
     - Send Messages
     - (TODO) Read Message History (for edits?)
   The bot needs a config.json file set up in the same folder as the bot.py script, with the following content:
-    {"token":"<your token goes here>"}
+    {"token":"your token goes here",
+     "copyuserid":your_user_id_goes_here}
 
 Developer documentation can be found at:
   libraries:
